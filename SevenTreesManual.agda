@@ -82,11 +82,11 @@ T→T⁷→T (C (C (C N _) _) _) = refl
 -- Forward ∘ Backward ≡ id.
 T⁷→T→T⁷ : ∀ (b) → T→T⁷ (T⁷→T b) ≡ b
 -- Case 2.
-T⁷→T→T⁷ (N , N , N , N , C t5a t5b , t6 , t7) = refl
+T⁷→T→T⁷ (N , N , N , N , C _ _ , _ , _) = refl
 -- Case 3.
-T⁷→T→T⁷ (N , N , N , N , N , C t6a t6b , t7) = refl
+T⁷→T→T⁷ (N , N , N , N , N , C _ _ , _) = refl
 -- Case 4.
-T⁷→T→T⁷ (N , N , N , N , N , N , C (C (C (C a b) c) d) e) = refl
+T⁷→T→T⁷ (N , N , N , N , N , N , C (C (C (C _ _) _) _) _) = refl
 -- Case 5.
 T⁷→T→T⁷ (N , N , N , N , N , N , N) = refl
 T⁷→T→T⁷ (N , N , N , N , N , N , C N _) = refl
